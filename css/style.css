@@ -1,0 +1,179 @@
+body {
+  background-color: #FFF;
+}
+
+h1 {
+  padding-bottom: 20px;
+  padding-top: 20px;
+  padding-left: 20px;
+  color: #262626;
+  font-family: 'Candal';
+  font-size: 55px;
+}
+
+#something {
+  font-size: 80%;
+}
+
+#something-2 {
+  font-size: 80%;
+}
+
+p {
+  padding-bottom: 20px;
+  padding-left: 20px;
+  color: #262626;
+  font-family: 'Cantarell';
+  font-size: 20px
+}
+
+p::first-letter {
+  font-size: 200%;
+  color: #d14848;
+
+}
+
+
+
+}
+
+a{
+  color: white;
+}
+
+.nav {
+  box-shadow: 3px 3px 6px 1px #DAE0E6;
+  background-color: #f1f1f1;
+  border-radius: 8px;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  width: 100%
+}
+
+.nav-list {
+  display: flex;
+  list-style-type: none;
+}
+
+.nav-item{
+  flex: 1;
+  display: block;
+}
+
+.nav-item a {
+  display: block;
+  color: #000;
+  font-family: "Cantarell";
+  font-size: 20px;
+  padding: 8px 16px;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* Change the link background and font colors on hover */
+.nav-item:hover{
+  background-color: #d14848;
+  box-shadow: 0px 15px 6px 1px #DAE0E6;
+}
+
+.nav-item a:hover {
+  color: white;
+}
+
+/*mobile nav*/
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .nav {
+    width: 100%;
+  }
+  .nav-list{
+    width: 100%;
+  }
+  .nav-item {
+    font-size: 50%;
+  }
+}
+
+
+
+.hero{
+  width: 100%;
+  height: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  background-image: url("richmond_james_river.jpg");
+  background-color: #cccccc;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.night-hero{
+  width: 100%;
+  height: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  background-image: url("richmond_circuits_exterior.jpg");
+  background-color: #cccccc;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.logo-text {
+  font-size: 30px;
+}
+
+
+div > img {
+  border-radius: 8px;
+  max-width: 80%;
+  height: auto;
+  margin: 40px;
+  box-shadow: 10px 10px 6px 1px #DAE0E6;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: center;
+}
+
+.logo {
+  padding-top: 35px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 30%;
+  max-height: 30%;
+}
+
+.skip{
+  position: absolute;
+  top: -1000px;
+  left: -1000px;
+  height: 1px;
+  width: 1px;
+  text-align: left;
+  overflow: hidden;
+  font-family: 'Cantarell';
+  font-size: 20px;
+  color: white;
+
+}
+
+.skip:active,
+.skip:focus,
+.skip:hover {
+    left: 0;
+    top: 0;
+    width: auto;
+    height: auto;
+    overflow: visible;
+    padding: 10px;
+    background-color: #d14848;
+}
