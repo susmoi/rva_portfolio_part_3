@@ -88,9 +88,13 @@ a{
   }
   .nav-list{
     width: 100%;
+    display: block;
+
   }
-  .nav-item {
-    font-size: 50%;
+  .nav-item a
+   {
+    text-align: left;
+    font-size:100%;
   }
 }
 
