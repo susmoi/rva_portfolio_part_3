@@ -2,15 +2,19 @@ body {
   background-color: #FFF;
 }
 
+.main{
+  padding-top: 70px;
+}
+/*Header stylings*/
 h1 {
-  padding-bottom: 20px;
-  padding-top: 20px;
-  padding-left: 20px;
+
   color: #262626;
   font-family: 'Candal';
   font-size: 55px;
+  position: absolute;
 }
 
+/*Font awesome stylings*/
 #something {
   font-size: 80%;
 }
@@ -18,6 +22,8 @@ h1 {
 #something-2 {
   font-size: 80%;
 }
+
+/*Paragraph stylings*/
 
 p {
   padding-bottom: 20px;
@@ -33,32 +39,27 @@ p::first-letter {
 
 }
 
-
-
-}
-
-a{
-  color: white;
-}
-
+/*NAV styling*/
 .nav {
-  box-shadow: 3px 3px 6px 1px #DAE0E6;
   background-color: #f1f1f1;
   border-radius: 8px;
   display: inline-block;
-  margin: 0;
-  padding: 0;
-  width: 100%
+  width: 100%;
+  height: 50px;
+  top: 0;
+  position: fixed;
 }
 
 .nav-list {
   display: flex;
   list-style-type: none;
+  height: inherit;
 }
 
 .nav-item{
   flex: 1;
   display: block;
+  margin: auto;
 }
 
 .nav-item a {
@@ -74,65 +75,18 @@ a{
 /* Change the link background and font colors on hover */
 .nav-item:hover{
   background-color: #d14848;
-  box-shadow: 0px 15px 6px 1px #DAE0E6;
+  box-shadow: 0px 10px 6px 1px #DAE0E6;
+  /*border-top: 6px solid #8e1f1f;*/
 }
-
 .nav-item a:hover {
   color: white;
+  text-align: center;
+  height: auto;
+
 }
 
-/*mobile nav*/
-@media screen and (min-width: 320px) and (max-width: 768px) {
-  .nav {
-    width: 100%;
-  }
-  .nav-list{
-    width: 100%;
-    display: block;
-
-  }
-  .nav-item a
-   {
-    text-align: left;
-    font-size:100%;
-  }
-}
-
-
-
-.hero{
-  width: 100%;
-  height: 100%;
-  min-width: 100%;
-  min-height: 100%;
-  background-image: url("richmond_james_river.jpg");
-  background-color: #cccccc;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-
-.night-hero{
-  width: 100%;
-  height: 100%;
-  min-width: 100%;
-  min-height: 100%;
-  background-image: url("richmond_circuits_exterior.jpg");
-  background-color: #cccccc;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-
-.logo-text {
-  font-size: 30px;
-}
-
-
-div > img {
-  border-radius: 8px;
+img {
+  border-radius: 4px;
   max-width: 80%;
   height: auto;
   margin: 40px;
@@ -145,20 +99,63 @@ div > img {
   flex-wrap: wrap;
   justify-content: flex-start;
   align-content: center;
+  padding-top: 70px;
 }
 
+/*Hero image stylings on must_see.html & food_beer_nightlife/html*/
+.must-see-hero{
+  width: 100%;
+  height: 500px;
+  background-image: url("../images/must_see/richmond_james_river.jpg");
+  background-color: #cccccc;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-top: 0;
+}
+
+.nightlife-hero{
+  width: 100%;
+  height: 500px;
+  background-image: url('../images/food_beer_nightlife/richmond_hardywood.jpg');
+  background-color: #cccccc;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+}
+.hero-text h1{
+  position: absolute;
+  bottom: 15px;
+  right: 40px;
+  color: #FFF;
+  text-shadow:
+  1px 1px 1px #d14848,
+	2px 2px 1px #d14848;
+}
+
+/*RVA logo stying*/
 .logo {
-  padding-top: 35px;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin:auto;
+  padding-top: 80px;
   max-width: 30%;
   max-height: 30%;
 }
 
+.logo-text {
+  font-size: 30px;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+
+/*Skip to content styling*/
 .skip{
   position: absolute;
-  top: -1000px;
+  bottom: -1000px;
   left: -1000px;
   height: 1px;
   width: 1px;
@@ -180,4 +177,21 @@ div > img {
     overflow: visible;
     padding: 10px;
     background-color: #d14848;
+}
+
+/*mobile nav*/
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .nav {
+    width: 100%;
+  }
+  .nav-list{
+    width: 100%;
+    display: block;
+
+  }
+  .nav-item a
+   {
+    text-align: left;
+    font-size:100%;
+  }
 }
