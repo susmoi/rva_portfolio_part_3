@@ -67,7 +67,10 @@ p {
 p::first-letter {
   font-size: 200%;
   color: #d14848;
+}
 
+.homepage_para{
+  text-align: center;
 }
 
 /*NAV styling*/
@@ -112,7 +115,6 @@ p::first-letter {
 .nav-item:hover a {
   text-align: center;
   margin: auto;
-  padding: 10px;
   color: #fff;
 }
 
@@ -219,7 +221,7 @@ img {
 /*mobile nav*/
 @media screen and (min-width: 320px) and (max-width: 768px) {
   .main{
-    padding-top: 20px;
+    padding-top: 0;
   }
   .nav {
     width: 100%;
@@ -233,12 +235,14 @@ img {
   }
   .nav-item a {
     text-align: left;
-    font-size:100%;
+    font-size:20px;
+    padding: 5px;
   }
   .nav-item a:hover {
     color: white;
     text-align: left;
     height: auto;
+    padding: 5px;
   }
   p{
     margin: auto;
@@ -246,7 +250,7 @@ img {
   }
 
   .logo {
-    display: block;
+    display: inline-block;
     margin:auto;
     max-width: 30%;
     box-shadow: none;
