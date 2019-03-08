@@ -111,8 +111,11 @@ img {
   max-height: 30%;
 }
 
-.logo-text {
-  font-size: 30px;
+.hero-text .logo-text  {
+  font-size: 65px;
+  text-align: center;
+  position: static;
+  padding-top: 330px ;
 }
 
 /*Hero image stylings on must_see.html & food_beer_nightlife/html*/
