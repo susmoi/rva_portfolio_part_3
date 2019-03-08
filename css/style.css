@@ -61,7 +61,7 @@ p {
   padding-left: 20px;
   color: #262626;
   font-family: 'Cantarell';
-  font-size: 20px
+  font-size: 35px
 }
 
 p::first-letter {
@@ -136,8 +136,9 @@ img {
 .hero-text .logo-text  {
   font-size: 65px;
   text-align: center;
-  position: static;
-  padding-top: 330px ;
+  position: absolute;
+  bottom: 15px;
+  margin: auto;
 }
 
 /*Hero image stylings on must_see.html & food_beer_nightlife/html*/
@@ -217,6 +218,9 @@ img {
 
 /*mobile nav*/
 @media screen and (min-width: 320px) and (max-width: 768px) {
+  .main{
+    padding-top: 20px;
+  }
   .nav {
     width: 100%;
     height: auto;
@@ -238,6 +242,7 @@ img {
   }
   p{
     margin: auto;
+    font-size: 100%;
   }
 
   .logo {
@@ -250,6 +255,15 @@ img {
   .logo-text {
     font-size: 30px;
     text-align: center;
+  }
+
+  .hero-text .logo-text  {
+    font-size: 200%;
+    text-align: center;
+    position: absolute;
+    bottom: 15px;
+    right: 0;
+    left: 0;
   }
 
 }
