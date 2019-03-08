@@ -5,6 +5,36 @@ body {
 .main{
   padding-top: 50px;
 }
+
+footer{
+  margin: auto;
+  padding-top: 20px;
+}
+
+footer p{
+  font-size: 10px;
+  display: inline-block;
+  padding: 0;
+}
+
+/*RVA logo stying*/
+.logo {
+  display: inline-block;
+  margin:auto;
+  width: 30px;
+  height: 15px;
+  box-shadow: none;
+  vertical-align: text-bottom;
+
+}
+
+.footer-items{
+  margin: auto;
+  text-align: center;
+
+
+}
+
 /*Header stylings*/
 h1 {
   color: #262626;
@@ -101,14 +131,6 @@ img {
   justify-content: flex-start;
   align-content: center;
   padding-top: 70px;
-}
-
-/*RVA logo stying*/
-.logo {
-  display: block;
-  margin:auto;
-  max-width: 30%;
-  max-height: 30%;
 }
 
 .hero-text .logo-text  {
