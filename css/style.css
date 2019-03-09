@@ -111,9 +111,8 @@ p::first-letter {
   /*border-top: 6px solid #8e1f1f;*/
 }
 .nav-item:hover a {
-  text-align: center;
-  margin: auto;
   color: #fff;
+  padding: 15px;
 }
 
 img {
