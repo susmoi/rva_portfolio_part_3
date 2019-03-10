@@ -8,7 +8,8 @@ body {
 
 footer{
   margin: auto;
-  padding-top: 20px;
+  padding-top: 60px;
+  padding-bottom: 30px;
 }
 
 footer p{
@@ -17,16 +18,6 @@ footer p{
   padding: 0;
 }
 
-/*RVA logo stying*/
-.logo {
-  display: inline-block;
-  margin:auto;
-  width: 30px;
-  height: 15px;
-  box-shadow: none;
-  vertical-align: text-bottom;
-
-}
 
 .footer-items{
   margin: auto;
@@ -64,11 +55,12 @@ p {
 
 p::first-letter {
   font-size: 200%;
-  color: #d14848;
+  color: #EC4067;
 }
 
 .homepage_para{
   text-align: center;
+  padding-top: 35px;
 }
 
 /*NAV styling*/
@@ -79,6 +71,7 @@ p::first-letter {
   height: 50px;
   top: 0;
   position: fixed;
+  z-index: 1;
 }
 
 .nav-list {
@@ -104,20 +97,22 @@ p::first-letter {
 
 /* NAV HOVER */
 .nav-item:hover{
-  background-color: #d14848;
-  color: #fff;
-  box-shadow: 0px 10px 6px 1px #DAE0E6;
+  /*background-color: #EC4067;*/
+  color: #EC4067;
   height: inherit;
   /*border-top: 6px solid #8e1f1f;*/
 }
 .nav-item:hover a {
-  color: #fff;
+  color: #EC4067;
   padding: 15px;
 }
 
-img {
+/*IMAGE Styling*/
+
+ .gallery img{
   border-radius: 4px;
   max-width: 80%;
+  min-width: 80%;
   height: auto;
   margin: 40px;
   box-shadow: 10px 10px 6px 1px #DAE0E6;
@@ -132,15 +127,27 @@ img {
   padding-top: 70px;
 }
 
-.hero-text .logo-text  {
-  font-size: 65px;
-  text-align: center;
-  position: absolute;
-  bottom: 15px;
-  margin: auto;
+/*RVA logo stying*/
+.logo {
+  display: inline-block;
+  margin:auto;
+  width: 30px;
+  height: 15px;
+  box-shadow: none;
+  vertical-align: text-bottom;
+
 }
 
-/*Hero image stylings on must_see.html & food_beer_nightlife/html*/
+.bw-logo {
+  display: block;
+  width: 50%;
+  height: 50%;
+  margin: auto;
+  box-shadow: none;
+
+}
+
+/*HERO IMAGE*/
 
 .index-hero{
   width: 100%;
@@ -164,6 +171,7 @@ img {
   background-size: cover;
   position: relative;
   padding-top: 0;
+  opacity: 0.85;
 }
 
 .nightlife-hero{
@@ -175,6 +183,7 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  opacity: 0.85;
 
 }
 
@@ -187,8 +196,11 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  opacity: 0.85;
 
 }
+
+/*HERO TEXT*/
 .hero-text h1{
   position: absolute;
   bottom: 15px;
@@ -199,8 +211,16 @@ img {
 	2px 2px 1px #d14848;
 }
 
+.hero-text .logo-text  {
+  font-size: 65px;
+  text-align: center;
+  position: relative;
+  margin: auto;
+  right: 0;
+}
 
-/*Skip to content styling*/
+
+/*SKIP to content styling*/
 .skip{
   position: absolute;
   bottom: -1000px;
@@ -263,6 +283,14 @@ img {
     margin:auto;
     max-width: 30%;
     box-shadow: none;
+
+  }
+
+  img .color-logo {
+    display: inline-block;
+    margin:auto;
+    box-shadow: none;
+    max-width: 30%
 
   }
   .logo-text {
